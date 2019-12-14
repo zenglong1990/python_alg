@@ -10,6 +10,8 @@ def findSmallest(arr):
 def selectionSort(arr):
     newArr = []
     for i in range(len(arr)):
+        #print(i)是为了消除变量i unused的警告
+        print (i)
         smallest = findSmallest(arr)
         newArr.append(arr.pop(smallest))
     return newArr
